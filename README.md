@@ -55,10 +55,3 @@ A fully automated, containerized platform for managing events, registrations, an
 - OpenAI API key (for AI features)
 - SMTP credentials (for email notifications)
 
-## Useful Commands
-- View logs: `docker-compose logs -f`
-- Stop all: `docker-compose down`
-- Fresh start: `./start-event-management.sh --fresh`
-
-## License
-MIT
