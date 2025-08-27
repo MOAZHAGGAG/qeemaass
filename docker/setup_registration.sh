@@ -18,14 +18,14 @@ if [ ! -f .env ]; then
 fi
 
 # Apply database schema
-echo "📊 Applying database schema..."
+echo " Applying database schema..."
 export PGPASSWORD=eventpass123
 psql -h localhost -p 5445 -U eventuser -d event_management -f registration_schema.sql
 
 if [ $? -eq 0 ]; then
-    echo "✅ Database schema applied successfully!"
+    echo " Database schema applied successfully!"
 else
-    echo "❌ Failed to apply database schema"
+    echo " Failed to apply database schema"
     echo "Please ensure PostgreSQL is running on localhost:5445"
     exit 1
 fi
@@ -38,4 +38,4 @@ echo "1. Edit .env file with your email credentials"
 echo "2. Start the services: docker-compose up -d email_service"
 echo "3. Set up registration connector: python import_registration_connector.py"
 echo ""
-echo "📧 Email service will automatically send confirmation emails when users register!"
+echo " Email service will automatically send confirmation emails when users register!"

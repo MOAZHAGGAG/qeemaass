@@ -1,7 +1,0 @@
-============================= test session starts ==============================
-platform darwin -- Python 3.12.2, pytest-7.4.4, pluggy-1.0.0
-rootdir: /Users/moaz/Downloads/qeemas final/event-management-app-main-2-copy-4-main
-plugins: Faker-32.1.0, langsmith-0.4.13, anyio-4.2.0
-collected 0 items
-
-============================ no tests ran in 0.01s =============================
