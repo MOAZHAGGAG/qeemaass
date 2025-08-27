@@ -20,7 +20,7 @@ from functools import lru_cache, wraps
 # -------------------- Configuration --------------------
 class Config:
     """Centralized configuration management"""
-    OPENAI_API_KEY = os.getenv("OPENAI_APIKEY", "OPENAI_API_KEY_REMOVEDproj-yAmmnHkcrW13L79CE1S7DEZei65ZAUHmlN4ryhyMlVkGVwq0wH1w2n4Vm2GLyMY23hPO3Jyz3sT3BlbkFJ7RfM8d7RS3ZnASe6TESV4xpfDe8kNajNrSE9oQsV2wqw1MpJeRo1bDvW5nUUo8nGT1Z-C6J6wA")
+    OPENAI_API_KEY = os.getenv("OPENAI_APIKEY", )
     WEAVIATE_URL = os.getenv("WEAVIATE_URL", "http://localhost:8085")
     
     # Database configuration
